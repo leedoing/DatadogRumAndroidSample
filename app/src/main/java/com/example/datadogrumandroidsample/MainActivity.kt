@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 		setContentView(binding.root)
 		initTransferButtonView()
 		initTimingButtonView()
+		//SetUser
 		Datadog.setUserInfo("1", "HyunjinLee", "hyunjin.lee@datadoghq.com")
 		initRetrofitInit()
 	}
@@ -53,12 +54,15 @@ class MainActivity : AppCompatActivity() {
 
 	private fun initTimingButtonView() {
 		binding.timing.setOnClickListener {
+			//버튼 클릭 시 Timing
 			GlobalRum.get().addTiming("initButton_load_timing")
+			//버튼 클릭 시 Global Context
 			GlobalRum.addAttribute("paid", "2")
 		}
 	}
 
 	fun initRetrofitInit() {
+		//HTTP 인터셉터
 		val okHttpClient = OkHttpClient.Builder()
 			.addInterceptor(DatadogInterceptor(rumResourceAttributesProvider = CustomRumResourceAttributesProvider()))
 			.eventListenerFactory(DatadogEventListener.Factory())
@@ -75,11 +79,13 @@ class MainActivity : AppCompatActivity() {
 
 	override fun onResume() {
 		super.onResume()
+		//onResume 시 로그 전송
 		GlobalRum.get().startView(this, "MainActivity", HashMap<String, String>().apply { put("onResume", "onResuemValue") })
 	}
 
 	override fun onPause() {
 		super.onPause()
+		//onPause 시 로그 전송
 		GlobalRum.get().stopView(this, HashMap<String, String>().apply { put("onPause", "onPauseValue") })
 	}
 
