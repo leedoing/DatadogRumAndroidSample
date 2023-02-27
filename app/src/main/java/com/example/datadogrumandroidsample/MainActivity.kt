@@ -3,6 +3,7 @@ package com.example.datadogrumandroidsample
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.datadog.android.Datadog
 import com.datadog.android.DatadogEventListener
 import com.datadog.android.DatadogInterceptor
 import com.datadog.android.rum.GlobalRum
@@ -28,11 +29,9 @@ class MainActivity : AppCompatActivity() {
 
 		binding = ActivityMainBinding.inflate(layoutInflater)
 		setContentView(binding.root)
-		GlobalRum.get().addTiming("MainActivity_load_timing")
 		initTransferButtonView()
-
 		initTimingButtonView()
-
+		Datadog.setUserInfo("1", "HyunjinLee", "hyunjin.lee@datadoghq.com")
 		initRetrofitInit()
 	}
 
@@ -55,6 +54,7 @@ class MainActivity : AppCompatActivity() {
 	private fun initTimingButtonView() {
 		binding.timing.setOnClickListener {
 			GlobalRum.get().addTiming("initButton_load_timing")
+			GlobalRum.addAttribute("paid", "2")
 		}
 	}
 
