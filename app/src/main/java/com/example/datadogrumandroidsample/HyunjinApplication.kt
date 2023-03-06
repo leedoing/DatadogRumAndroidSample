@@ -41,7 +41,7 @@ class HyunjinApplication : Application() {
 
 		val credentials = Credentials(clientToken, environmentName, appVariantName, applicationId)
 		Datadog.initialize(this, credentials, configuration, TrackingConsent.GRANTED)
-		// Session 샘플레이트
+		// DD Session SampleRate
 		GlobalRum.registerIfAbsent(RumMonitor.Builder().sampleRumSessions(100.0f).build())
 	}
 }
