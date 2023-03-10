@@ -12,10 +12,10 @@ Datadog RUM [snippet code](https://gist.github.com/PurpleBooth/109311bb0361f32d8
 ---
 
 - [Custom Timings(Click button)](https://docs.datadoghq.com/real_user_monitoring/android/advanced_configuration/?tab=kotlin#add-your-own-performance-timing)
-<img src="https://blog.kakaocdn.net/dn/2jzCn/btr2ZB5itLh/tkF3GKlgIWzH4G5h7aetAk/img.png" style="width:70%; height:70%"/>
+<img src="https://blog.kakaocdn.net/dn/2jzCn/btr2ZB5itLh/tkF3GKlgIWzH4G5h7aetAk/img.png" style="width:100%; height:100%"/>
 
 ---
 
 - [Resources API, Header and Body of Fetch, XHR and Native](https://docs.datadoghq.com/real_user_monitoring/android/advanced_configuration/?tab=kotlin#enrich-resources)
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc9LPtJ%2Fbtr22JafLtv%2Fbf3DXIbhLuLQ5XbNzEN7zk%2Fimg.png" style="width:70%; height:70%"/>
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2jzCn%2Fbtr2ZB5itLh%2FtkF3GKlgIWzH4G5h7aetAk%2Fimg.png" style="width:70%; height:70%"/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc9LPtJ%2Fbtr22JafLtv%2Fbf3DXIbhLuLQ5XbNzEN7zk%2Fimg.png" style="width:100%; height:100%"/>
+<img src="https://blog.kakaocdn.net/dn/bOSfe9/btr2UoenM8b/B7IDjmYgm2xTN4uGfqArOK/img.png" style="width:70%; height:70%" />
