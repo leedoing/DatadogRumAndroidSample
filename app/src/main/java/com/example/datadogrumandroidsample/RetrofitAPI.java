@@ -5,7 +5,7 @@ import retrofit2.http.GET;
 
 public interface RetrofitAPI {
 
-   @GET("manifest.json")
+   @GET("price.json")
    Call<HyunjinResponse> test();
 
 }
