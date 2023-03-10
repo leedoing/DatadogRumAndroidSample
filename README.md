@@ -3,7 +3,8 @@
 Datadog RUM [snippet code](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) in the console is quite basic, and can be confusing for Android developers. However, by using the sample code, it is possible to quickly configure Android RUM. It can reduce the time required for a PoC for a Native Application.
 
 ## MainActivity
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcphGW0%2Fbtr27WGOFyG%2FuU7EjPNDRcr8zI3RtvGoW1%2Fimg.png  width="200" height="400"/>
+![image](https://blog.kakaocdn.net/dn/cphGW0/btr27WGOFyG/uU7EjPNDRcr8zI3RtvGoW1/img.png)
+<img src="https://blog.kakaocdn.net/dn/cphGW0/btr27WGOFyG/uU7EjPNDRcr8zI3RtvGoW1/img.png" width="50" height="50 />
 
 ## Key Functions
 - [Sample/Set User/onResume/onPause/Global Context](https://docs.datadoghq.com/real_user_monitoring/android/advanced_configuration/?tab=kotlin#sample-rum-sessions)
