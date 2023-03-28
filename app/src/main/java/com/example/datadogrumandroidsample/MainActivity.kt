@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.datadog.android.Datadog
 import com.datadog.android.DatadogEventListener
 import com.datadog.android.DatadogInterceptor
+import com.datadog.android.log.Logger
 import com.datadog.android.rum.GlobalRum
 import com.example.datadogrumandroidsample.databinding.ActivityMainBinding
 import okhttp3.OkHttpClient
@@ -34,6 +35,14 @@ class MainActivity : AppCompatActivity() {
 		//SetUser
 		Datadog.setUserInfo("1", "HyunjinLee", "hyunjin.lee@datadoghq.com")
 		initRetrofitInit()
+		val logger = Logger.Builder()
+			.setNetworkInfoEnabled(true)
+			.setLogcatLogsEnabled(true)
+			.setDatadogLogsEnabled(true)
+			.setBundleWithTraceEnabled(true)
+			.setLoggerName("logger test")
+			.build()
+		logger.d("Datadog Android Sample Start")
 	}
 
 	private fun initTransferButtonView() {
@@ -58,6 +67,7 @@ class MainActivity : AppCompatActivity() {
 			GlobalRum.get().addTiming("initButton_load_timing")
 			//DD Global Context
 			GlobalRum.addAttribute("paid", "2")
+
 		}
 	}
 
